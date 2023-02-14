@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 771207810}
   - component: {fileID: 771207811}
   - component: {fileID: 771207812}
+  - component: {fileID: 771207813}
   m_Layer: 0
   m_Name: GameSpawnController
   m_TagString: Untagged
@@ -362,14 +363,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771207808}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb80a505671ba0e45bfa5cca685b8076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   row: 3
   col: 3
-  distant: 1
+  distant: 5
   elements: 9
   gameobjectElement: {fileID: 4198141948473199687, guid: d3a6b2f956d70b64b967bbb297a06869, type: 3}
   spawnPosition: {fileID: 428258977}
@@ -385,6 +386,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c478835ac2631484b810c6adb62c800c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &771207813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771207808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4309473ae422749488b980ab3c5cf8bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tex: {fileID: 2800000, guid: 209dc34d42ef3414bbef910533f7cce3, type: 3}
 --- !u!1 &845868254
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,11 +411,11 @@ GameObject:
   - component: {fileID: 845868255}
   m_Layer: 0
   m_Name: MainBg
-  m_TagString: Untagged
+  m_TagString: MainImage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &845868255
 SpriteRenderer:
   m_ObjectHideFlags: 0
